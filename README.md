@@ -10,3 +10,4 @@ Basic Requirements:
 [X] It should have a changeTodo method
 [X] It should have a deleteTodo method
 
+Refactored code in both changeTodo and deleteTodo to use forEach instead of the original for loop

@@ -26,11 +26,11 @@ var todoList = {
     this.displayTodos();
   },
   deleteTodo: function (deletedTodo) {
-    for (let i = 0; i < todoList.todos.length; i++) {
-      if (this.todos[i] === deletedTodo) {
-         this.todos.splice(i, 1);
-      } 
-    }
+    this.todos.forEach((todo, index) => {
+      if (todo === deletedTodo) {
+        this.todos.splice(index, 1);
+      }
+    });
     this.displayTodos()
   }
 }
