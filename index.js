@@ -18,11 +18,11 @@ var todoList = {
     this.displayTodos();
   },
   changeTodo: function (oldTodo, newTodo) {
-    for (let i = 0; i < this.todos.length; i++) {
-      if (this.todos[i] === oldTodo) {
-        this.todos[i] = newTodo;
-      } 
-    }
+    this.todos.forEach((todo, index)=> {
+      if (todo === oldTodo) {
+        this.todos[index] = newTodo;
+      }
+    });
     this.displayTodos();
   },
   deleteTodo: function (deletedTodo) {
