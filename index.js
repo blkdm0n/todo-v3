@@ -2,10 +2,15 @@
 
 //REQ 2 - It should have a displayTodos method
 
+//REQ 3 - It should have an addTodo method
+
 var todoList = {
   todos: [`item1`, `item2`, `item3`],
   displayTodos: function () {
     console.log(todoList.todos);
-    }
+  },
+  addTodo: function (todo) {
+    todoList.todos.push(todo);
+  } 
 }
 
